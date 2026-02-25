@@ -1,131 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Akaash & Leena</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Our Story</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #f6f3ee;
+  color: #222;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: #f6f3ee;
+  padding: 12px 20px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: "Playfair Display";
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.stack img {
+  width: 220px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.story {
+  background: #243423;
+  color: #eee;
+  padding: 60px;
+  border-radius: 12px;
+  line-height: 1.7;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+</style>
 </head>
 
 <body>
-  <header class="topbar">
-    <a class="menu" href="#info">MENU</a>
-  </header>
 
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="hero-inner">
-      <div class="hero-line hero-line-left">WE ARE GETTING MARRIED</div>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#photos">Photos</a>
+  <a href="#notes">Notes</a>
+  <a href="#places">Places</a>
+</nav>
 
-      <h1 class="names">
-        <span class="name-top">AK A A S H</span>
-        <span class="amp">&amp;</span>
-        <span class="name-bottom">L E E N A</span>
-      </h1>
+<section id="home" class="hero">
+  <h1>Our Story</h1>
 
-      <div class="hero-line hero-line-right">IN JULY OF 2026</div>
+  <div class="stack">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
+  </div>
+</section>
 
-      <div class="photo-stack">
-        <img src="assets/photo1.jpg" alt="Photo 1" />
-        <img src="assets/photo2.jpg" alt="Photo 2" />
-        <img src="assets/photo3.jpg" alt="Photo 3" />
-      </div>
-    </div>
-  </section>
+<section class="story">
+  <p>
+  This is where you write your intro.  
+  How you met, dumb inside jokes, favorite moments — whatever you want.
+  </p>
 
-  <!-- STORY BLOCK -->
-  <section class="story">
-    <div class="story-inner">
-      <img class="flower flower-a" src="assets/flower1.png" alt="" />
-      <img class="flower flower-b" src="assets/flower2.png" alt="" />
-      <img class="flower flower-c" src="assets/flower3.png" alt="" />
+  <p>
+  Think of this as your digital scrapbook page.
+  </p>
+</section>
 
-      <p>
-        We met <strong>[where]</strong>. Leena was there for <strong>[reason]</strong>, Akaash was there for
-        <strong>[reason]</strong>. Somehow, we started talking — and that conversation hasn’t really stopped since.
-      </p>
+<section id="photos">
+  <h2>Photos</h2>
 
-      <p>
-        A few years, <strong>[a move / a milestone]</strong>, and <strong>[pet / inside joke]</strong> later,
-        we realized we’d built a little life that felt like home.
-      </p>
+  <div class="gallery">
+    <img src="photo4.jpg">
+    <img src="photo5.jpg">
+    <img src="photo6.jpg">
+  </div>
+</section>
 
-      <p class="story-closer">
-        So here we are — ready to make it official (and throw a really good party while we’re at it).
-      </p>
-    </div>
-  </section>
+<section id="notes">
+  <h2>Notes</h2>
 
-  <!-- INFO -->
-  <section class="info" id="info">
-    <div class="info-inner">
-      <h2>ALL THE INFORMATION:</h2>
+  <div class="card">
+    <p>First trip together.</p>
+  </div>
 
-      <div class="details-card">
-        <div class="detail">
-          <div class="label">DATE</div>
-          <div class="value">Saturday<br/>July __, 2026</div>
-        </div>
+  <div class="card">
+    <p>The day we laughed for 3 hours straight.</p>
+  </div>
+</section>
 
-        <div class="detail">
-          <div class="label">LOCATION</div>
-          <div class="value">Venue Name<br/>City, State</div>
-        </div>
+<section id="places">
+  <h2>Places</h2>
 
-        <div class="detail">
-          <div class="label">TIME</div>
-          <div class="value">Ceremony: __:__<br/>Dinner: __:__</div>
-        </div>
-      </div>
+  <div class="card">
+    <strong>San Francisco</strong>
+    <p>Coffee + walking + accidentally getting lost.</p>
+  </div>
 
-      <div class="info-text">
-        <p>
-          We can’t wait to celebrate with our favorite people. Expect good food, great music,
-          and a weekend full of laughter, dancing, and happy tears.
-        </p>
-      </div>
+  <div class="card">
+    <strong>LA</strong>
+    <p>Sunsets and street tacos.</p>
+  </div>
+</section>
 
-      <!-- OPTIONAL BUTTONS -->
-      <div class="cta-row">
-        <a class="btn" href="#rsvp">RSVP</a>
-        <a class="btn btn-outline" href="#travel">TRAVEL</a>
-        <a class="btn btn-outline" href="#registry">REGISTRY</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- RSVP -->
-  <section class="simple-section" id="rsvp">
-    <div class="simple-inner">
-      <h3>RSVP</h3>
-      <p>Drop your RSVP link here (Google Form / Zola / whatever).</p>
-      <a class="link" href="#" target="_blank" rel="noreferrer">RSVP Link →</a>
-    </div>
-  </section>
-
-  <!-- TRAVEL -->
-  <section class="simple-section" id="travel">
-    <div class="simple-inner">
-      <h3>Travel</h3>
-      <ul>
-        <li><strong>Hotel block:</strong> [details]</li>
-        <li><strong>Nearest airport:</strong> [details]</li>
-        <li><strong>Getting around:</strong> [details]</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- REGISTRY -->
-  <section class="simple-section" id="registry">
-    <div class="simple-inner">
-      <h3>Registry</h3>
-      <p>If you’re doing one, link it here. If not, say “your presence is the gift.”</p>
-      <a class="link" href="#" target="_blank" rel="noreferrer">Registry Link →</a>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <a href="#top">Back to top ↑</a>
-  </footer>
 </body>
 </html>
