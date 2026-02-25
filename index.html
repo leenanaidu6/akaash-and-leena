@@ -3,66 +3,129 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Akaash & Leena 💕</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Akaash & Leena</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="hero" id="top">
-    <div class="hero-card">
-      <p class="kicker">A digital scrapbook</p>
-      <h1>Akaash &amp; Leena <span aria-hidden="true">💕</span></h1>
-      <p class="subtitle">Tiny memories, big feelings.</p>
-
-      <nav class="nav">
-        <a href="#how-we-met">How We Met</a>
-        <a href="#first-memory">Our First Memory</a>
-        <a href="#reasons">Reasons I Choose You</a>
-      </nav>
-    </div>
+  <header class="topbar">
+    <a class="menu" href="#info">MENU</a>
   </header>
 
-  <main class="container">
-    <section class="card" id="how-we-met">
-      <h2>How We Met</h2>
-      <p class="prompt">Write this like a story—where you met, first impression, what made you remember him.</p>
-      <p>It started with a moment that felt ordinary… until it wasn’t.</p>
-    </section>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-line hero-line-left">WE ARE GETTING MARRIED</div>
 
-    <section class="card" id="first-memory">
-      <h2>Our First Memory</h2>
-      <p class="prompt">Pick one clear snapshot: a place, a smell, a song, a silly moment, a line someone said.</p>
-      <p>I still remember the exact feeling of that day—like the world got a little softer.</p>
-    </section>
+      <h1 class="names">
+        <span class="name-top">AK A A S H</span>
+        <span class="amp">&amp;</span>
+        <span class="name-bottom">L E E N A</span>
+      </h1>
 
-    <section class="card" id="reasons">
-      <h2>Reasons I Choose You</h2>
-      <p class="prompt">Keep it specific. Small habits beat big generic statements every time.</p>
+      <div class="hero-line hero-line-right">IN JULY OF 2026</div>
 
-      <ul class="reasons-list">
-        <li>You make hard days feel survivable.</li>
-        <li>You pay attention to the little things.</li>
-        <li>You make me laugh when I least expect it.</li>
-        <li>You feel like home, even in new places.</li>
+      <div class="photo-stack">
+        <img src="assets/photo1.jpg" alt="Photo 1" />
+        <img src="assets/photo2.jpg" alt="Photo 2" />
+        <img src="assets/photo3.jpg" alt="Photo 3" />
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY BLOCK -->
+  <section class="story">
+    <div class="story-inner">
+      <img class="flower flower-a" src="assets/flower1.png" alt="" />
+      <img class="flower flower-b" src="assets/flower2.png" alt="" />
+      <img class="flower flower-c" src="assets/flower3.png" alt="" />
+
+      <p>
+        We met <strong>[where]</strong>. Leena was there for <strong>[reason]</strong>, Akaash was there for
+        <strong>[reason]</strong>. Somehow, we started talking — and that conversation hasn’t really stopped since.
+      </p>
+
+      <p>
+        A few years, <strong>[a move / a milestone]</strong>, and <strong>[pet / inside joke]</strong> later,
+        we realized we’d built a little life that felt like home.
+      </p>
+
+      <p class="story-closer">
+        So here we are — ready to make it official (and throw a really good party while we’re at it).
+      </p>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="info" id="info">
+    <div class="info-inner">
+      <h2>ALL THE INFORMATION:</h2>
+
+      <div class="details-card">
+        <div class="detail">
+          <div class="label">DATE</div>
+          <div class="value">Saturday<br/>July __, 2026</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">LOCATION</div>
+          <div class="value">Venue Name<br/>City, State</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">TIME</div>
+          <div class="value">Ceremony: __:__<br/>Dinner: __:__</div>
+        </div>
+      </div>
+
+      <div class="info-text">
+        <p>
+          We can’t wait to celebrate with our favorite people. Expect good food, great music,
+          and a weekend full of laughter, dancing, and happy tears.
+        </p>
+      </div>
+
+      <!-- OPTIONAL BUTTONS -->
+      <div class="cta-row">
+        <a class="btn" href="#rsvp">RSVP</a>
+        <a class="btn btn-outline" href="#travel">TRAVEL</a>
+        <a class="btn btn-outline" href="#registry">REGISTRY</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="simple-section" id="rsvp">
+    <div class="simple-inner">
+      <h3>RSVP</h3>
+      <p>Drop your RSVP link here (Google Form / Zola / whatever).</p>
+      <a class="link" href="#" target="_blank" rel="noreferrer">RSVP Link →</a>
+    </div>
+  </section>
+
+  <!-- TRAVEL -->
+  <section class="simple-section" id="travel">
+    <div class="simple-inner">
+      <h3>Travel</h3>
+      <ul>
+        <li><strong>Hotel block:</strong> [details]</li>
+        <li><strong>Nearest airport:</strong> [details]</li>
+        <li><strong>Getting around:</strong> [details]</li>
       </ul>
+    </div>
+  </section>
 
-      <button class="love-button" id="loveBtn" type="button">
-        Click for a tiny surprise ✨
-      </button>
-      <p class="surprise" id="surpriseText" aria-live="polite"></p>
-    </section>
-
-    <section class="card">
-      <h2>Next Up</h2>
-      <p>Later we’ll add photos, a timeline, cute animations, and hidden pages.</p>
-      <p class="footer-note">Made with love • Secured with Cloudflare Access</p>
-    </section>
-  </main>
+  <!-- REGISTRY -->
+  <section class="simple-section" id="registry">
+    <div class="simple-inner">
+      <h3>Registry</h3>
+      <p>If you’re doing one, link it here. If not, say “your presence is the gift.”</p>
+      <a class="link" href="#" target="_blank" rel="noreferrer">Registry Link →</a>
+    </div>
+  </section>
 
   <footer class="footer">
     <a href="#top">Back to top ↑</a>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
